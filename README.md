@@ -10,3 +10,6 @@ If you don't need to change the code, you can also download the .dll assembly an
 Make sure to install the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
 Download or fork the source code and open the folder containing it.
 Like in Visual Studio, you can also use the .dll assembly.
+## File format
+### Black and white
+### Color
