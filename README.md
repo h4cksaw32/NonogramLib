@@ -36,13 +36,22 @@ The byte following it denotes the size of the color palette.
 Every four bytes after that represents the channels of each color in this order: Red, Green, Blue, Alpha.
 After the specified number of colors are represented, each cell is represented by a byte which is its color index.
 
-Sample file:
+**Sample file**
 ```
 FE => signature
 04 => palette size: 4 colors
-00 00 00 FF => Color #1 (BG): `#000000`
-FF 00 00 FF => Color #2: `#FF0000`
-00 FF 00 FF => Color #3: `#00FF00`
-00 00 FF FF => Color #4: `#0000FF`
+00 00 00 FF => Color #1 (BG): #000000 (black)
+FF 00 00 FF => Color #2: #FF0000 (red)
+00 FF 00 FF => Color #3: #00FF00 (green)
+00 00 FF FF => Color #4: #0000FF (blue)
 05 05 => width: 5; height: 5
+
+Cell data:
+01 01 01 01 03
+03 02 02 02 03
+03 02 00 02 03
+03 02 02 02 03
+03 01 01 01 01
 ```
+Result:
+![*Looks like you can't see this beautiful image. I wonder if there is a way to see it for yourself...*](example.png)
