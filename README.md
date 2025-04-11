@@ -38,4 +38,11 @@ After the specified number of colors are represented, each cell is represented b
 
 Sample file:
 ```
+FE => signature
+04 => palette size: 4 colors
+00 00 00 FF => Color #1 (BG): `#000000`
+FF 00 00 FF => Color #2: `#FF0000`
+00 FF 00 FF => Color #3: `#00FF00`
+00 00 FF FF => Color #4: `#0000FF`
+05 05 => width: 5; height: 5
 ```
