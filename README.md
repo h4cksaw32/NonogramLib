@@ -25,15 +25,14 @@ If the file is too short to contain all of the cell data, the remaining cells wi
 ### Black and white
 The file signature is `0x00`.
 
-There is no data between the file signature and the size data.
-Each byte in the cell data represents 8 cells, from left to right. Each bit indicates whether each cell is filled in (1) or not (0).
-For example:
-`0x65 => 0b01100101 => □■■□□■□■`
+There is no data between the file signature and the size data.\
+A byte in the cell data represents 8 cells, from left to right. Each bit indicates whether each cell is filled in (1) or not (0).\
+For example: `0x65 => 0b01100101 => □■■□□■□■`
 
 ### Color
 The file signature is `0xFE`.
-The byte following it denotes the size of the color palette.
-Every four bytes after that represents the channels of each color in this order: Red, Green, Blue, Alpha.
+The byte following it denotes the size of the color palette.\
+Every four bytes after that represents the channels of each color in this order: Red, Green, Blue, Alpha.\
 After the specified number of colors are represented, each cell is represented by a byte which is its color index.
 
 **Sample file**
@@ -53,5 +52,5 @@ Cell data:
 03 02 02 02 03
 03 01 01 01 01
 ```
-Result:
-![*Looks like you can't see this beautiful image. I wonder if there is a way to see it for yourself...*](example.png)
+Result:\
+![*Looks like you can't see this beautiful image. I wonder if there is a way to enjoy it for yourself...*](example.png)
